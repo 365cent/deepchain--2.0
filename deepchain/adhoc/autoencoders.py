@@ -4,7 +4,7 @@ from keras.models import Model
 from keras.optimizers import Adam
 from keras.regularizers import activity_l1
 
-import numpy as np
+import cupy as np
 import matplotlib.pyplot as plt
 import keras.backend as K
 import tensorflow as tf

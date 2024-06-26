@@ -1,4 +1,4 @@
-import numpy as np
+import cupy as np
 import hipsternet.regularization as reg
 import hipsternet.utils as util
 import bigfloat

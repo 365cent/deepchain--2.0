@@ -1,5 +1,5 @@
 import tensorflow as tf
-import numpy as np
+import cupy as np
 
 
 def onehot(vocab_size, idx):

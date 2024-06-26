@@ -3,7 +3,7 @@
 
 from __future__ import print_function
 import matplotlib.pyplot as plt
-import numpy as np
+import cupy as np
 import os
 import sys
 import tarfile
@@ -109,7 +109,7 @@ scipy.io.savemat('./SVHN/test_32x32_1.mat',{'X': test_data,'y': test_labels})
 # coding: UTF-8
 from scipy.io import loadmat as load
 import matplotlib.pyplot as plt
-import numpy as np
+import cupy as np
 from  PIL import  Image
 
 def reformat(samples, labels):

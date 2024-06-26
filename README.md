@@ -1,6 +1,6 @@
 # environment:
  - Python 3.6.4 |Anaconda
- - numpy      = 1.14.0
+ - cupy      = 1.14.0
  - tensorflow = 1.7.0
 
 # tools:

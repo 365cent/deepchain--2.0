@@ -2,7 +2,7 @@
 from __future__ import print_function
 from sklearn.model_selection import train_test_split
 import matplotlib.pyplot as plt
-import numpy as np
+import cupy as np
 import os
 import sys
 import tarfile

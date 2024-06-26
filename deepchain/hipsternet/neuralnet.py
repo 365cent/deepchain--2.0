@@ -1,11 +1,11 @@
 from typing import Tuple
 
-import numpy as np
+import cupy as np
 import hipsternet.loss as loss_fun
 import hipsternet.layer as l
 import hipsternet.regularization as reg
 import hipsternet.utils as util
-from numpy.core.multiarray import ndarray
+from cupy.core.multiarray import ndarray
 
 
 class NeuralNet(object):

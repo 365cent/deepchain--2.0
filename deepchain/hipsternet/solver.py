@@ -1,4 +1,4 @@
-import numpy as np
+import cupy as np
 import hipsternet.utils as util
 from hipsternet.constant import eps as c
 import copy

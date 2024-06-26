@@ -4,7 +4,7 @@ from __future__ import print_function
 import gzip
 import  tarfile
 import  os
-import numpy
+import cupy
 from six.moves import urllib
 import subprocess
 

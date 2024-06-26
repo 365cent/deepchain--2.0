@@ -1,4 +1,4 @@
-import numpy as np
+import cupy as np
 from sklearn.model_selection import train_test_split
 from tensorflow.examples.tutorials.mnist import input_data
 import tensorflow as tf

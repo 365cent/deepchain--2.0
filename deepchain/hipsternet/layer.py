@@ -1,4 +1,4 @@
-import numpy as np
+import cupy as np
 import hipsternet.utils as util
 import hipsternet.constant as c
 import hipsternet.regularization as reg

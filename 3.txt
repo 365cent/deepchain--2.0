@@ -1742,25 +1742,25 @@ Iter-50 loss: inf validation: 0.099000
 Iter-50 loss: inf validation: 0.099000
 Iter-50 loss: inf validation: 0.099000
 Iter-50 loss: inf validation: 0.099000
-/home/wzd/anaconda3/lib/python3.6/site-packages/numpy/core/_methods.py:116: RuntimeWarning: overflow encountered in multiply
+/home/wzd/anaconda3/lib/python3.6/site-packages/cupy/core/_methods.py:116: RuntimeWarning: overflow encountered in multiply
   x = um.multiply(x, x, out=x)
-/home/wzd/anaconda3/lib/python3.6/site-packages/numpy/core/_methods.py:117: RuntimeWarning: overflow encountered in reduce
+/home/wzd/anaconda3/lib/python3.6/site-packages/cupy/core/_methods.py:117: RuntimeWarning: overflow encountered in reduce
   ret = umr_sum(x, axis, dtype, out, keepdims)
 Iter-100 loss: inf validation: 0.099000
 Iter-100 loss: inf validation: 0.099000
 Iter-100 loss: inf validation: 0.099000
 Iter-100 loss: inf validation: 0.099000
-/home/wzd/anaconda3/lib/python3.6/site-packages/numpy/core/_methods.py:70: RuntimeWarning: overflow encountered in reduce
+/home/wzd/anaconda3/lib/python3.6/site-packages/cupy/core/_methods.py:70: RuntimeWarning: overflow encountered in reduce
   ret = umr_sum(arr, axis, dtype, out, keepdims)
-/home/wzd/anaconda3/lib/python3.6/site-packages/numpy/core/_methods.py:102: RuntimeWarning: overflow encountered in reduce
+/home/wzd/anaconda3/lib/python3.6/site-packages/cupy/core/_methods.py:102: RuntimeWarning: overflow encountered in reduce
   arrmean = umr_sum(arr, axis, dtype, keepdims=True)
 /home/wzd/桌面/deepchain2/deepchain/deepchain/hipsternet/layer.py:90: RuntimeWarning: invalid value encountered in true_divide
   X_norm = (X - mu) / np.sqrt(var + c.eps)
-/home/wzd/anaconda3/lib/python3.6/site-packages/numpy/core/_methods.py:26: RuntimeWarning: invalid value encountered in reduce
+/home/wzd/anaconda3/lib/python3.6/site-packages/cupy/core/_methods.py:26: RuntimeWarning: invalid value encountered in reduce
   return umr_maximum(a, axis, None, out, keepdims)
 /home/wzd/桌面/deepchain2/deepchain/deepchain/hipsternet/layer.py:33: RuntimeWarning: invalid value encountered in less_equal
   dX[cache <= 0] = 0
-/home/wzd/anaconda3/lib/python3.6/site-packages/numpy/core/_methods.py:112: RuntimeWarning: invalid value encountered in subtract
+/home/wzd/anaconda3/lib/python3.6/site-packages/cupy/core/_methods.py:112: RuntimeWarning: invalid value encountered in subtract
   x = asanyarray(arr - arrmean)
 /home/wzd/桌面/deepchain2/deepchain/deepchain/hipsternet/layer.py:90: RuntimeWarning: invalid value encountered in subtract
   X_norm = (X - mu) / np.sqrt(var + c.eps)
