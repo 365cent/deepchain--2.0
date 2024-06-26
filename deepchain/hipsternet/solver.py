@@ -93,7 +93,7 @@ def sgd3(nn, X_train, y_train,worker_num ,val_set=None, alpha=1e-3, mb_size=256,
     for iter in range(1, n_iter + 1):
         for k in range(worker_num):
             idx = np.random.randint(0, len(minibatches[k]))
-            X_mini[k], y_mini[k] = minibatches[k][idx]
+            X_mini[k], y_mini[k] = minibatches[k][idx.item()]
 
             grad[k], loss[k] = nn[k].train_step(X_mini[k], y_mini[k])
             if iter % print_after == 0:
