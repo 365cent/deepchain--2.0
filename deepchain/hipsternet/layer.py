@@ -201,7 +201,7 @@ def conv_forward(X, W, b, stride=1, padding=2):
     W_col = W.reshape(n_filters, -1)
     #print('X_col shape',X_col.shape)
     #print('W_col shape',W_col.shape)
-    out = W_col @ X_col + b
+    out = np.dot(W_col, X_col) + b
     #print('out shape',out.shape)
     out = out.reshape(n_filters, h_out, w_out, n_x)
     out = out.transpose(3, 0, 1, 2)
