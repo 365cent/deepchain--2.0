@@ -91,7 +91,7 @@ if __name__ == '__main__':
     X_test = X_test.reshape(-1,*img_shape)
     X1_val = X1_val.reshape(-1,*img_shape)
     val1_set = (X1_val,y1_val)
-    np.set_printoptions(precision=8,threshold=np.NAN)
+    # np.set_printoptions(precision=8,threshold=np.NAN) ///
     f1.write('X_train {}{}'.format(X_train[0],'\n'))
     f1.write('y_train {}'.format(y_train[0]))
     solvers = dict(

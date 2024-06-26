@@ -46,7 +46,7 @@ def sgd(nn, X_train, y_train,f, val_set=None, alpha=1e-3, mb_size=256, n_iter=20
                 accu.append(val_acc)
                 print('Iter-{} loss: {:.4f} validation: {:4f}'.format(iter, loss, val_acc))
                 f.write('Iter-{} loss: {:.4f} validation: {:4f}'.format(iter, loss, val_acc))
-                np.set_printoptions(threshold=np.NaN)
+                # np.set_printoptions(threshold=np.NaN) ///
                 f.write('grad[W1] {}:{}'.format(iter,'\n'))
                 f.write('{} {}'.format(grad['W1'],'\n'))
                 f.write('grad[b1] {}:{}'.format(iter,'\n'))

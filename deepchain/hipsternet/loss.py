@@ -27,7 +27,7 @@ def regularization(model, reg_type='l2', lam=1e-3):
 
 
 def cross_entropy(model, y_pred, y_train, lam=1e-3):
-    np.set_printoptions(threshold=np.nan,precision=24)
+    # np.set_printoptions(threshold=np.nan,precision=24) ///
     m = y_pred.shape[0]
     prob = util.softmax(y_pred)
     log_like = -np.log(prob[range(m), y_train])
