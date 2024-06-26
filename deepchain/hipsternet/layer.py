@@ -198,6 +198,7 @@ def conv_forward(X, W, b, stride=1, padding=2):
     h_out, w_out = int(h_out), int(w_out)
 
     X_col = im2col_indices(X, h_filter, w_filter, padding=padding, stride=stride)
+    X_col = X_col.astype(np.float64)    # convert X_col to float64 to avoid error
     W_col = W.reshape(n_filters, -1)
     #print('X_col shape',X_col.shape)
     #print('W_col shape',W_col.shape)
