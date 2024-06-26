@@ -1,4 +1,4 @@
-import cupy as np
+import numpy as np
 
 
 def get_im2col_indices(x_shape, field_height, field_width, padding=1, stride=1):
@@ -28,7 +28,7 @@ def im2col_indices(x, field_height, field_width, padding=1, stride=1):
     # Zero-pad the input
     p = padding
     #print('im2col padding is ',padding)
-    x_padded = np.pad(x, ((0, 0), (0, 0), (p, p), (p, p)), mode='constant', constant_values=0)
+    x_padded = np.pad(np.array(x), ((0, 0), (0, 0), (p, p), (p, p)), mode='constant')
 
     k, i, j = get_im2col_indices(x.shape, field_height, field_width, padding, stride)
 
