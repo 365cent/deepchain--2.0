@@ -207,6 +207,7 @@ def conv_forward(X, W, b, stride=1, padding=2):
     print("Type of b:", type(b), "with dtype:", b.dtype)
     print("Shape of W_col:", W_col.shape)
     print("Shape of X_col:", X_col.shape)
+    print("Shape of b:", b.shape)
     out = W_col @ X_col + b
     print("Type of out:", type(out), "with dtype:", out.dtype)
     #print('out shape',out.shape)
