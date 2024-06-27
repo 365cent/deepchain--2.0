@@ -23,7 +23,7 @@ def fc_backward(dout, cache):
 
 
 def relu_forward(X):
-    out = np.maximum(X, 0)
+    out = np.max(X, 0)
     cache = X
     return out, cache
 
@@ -202,12 +202,6 @@ def conv_forward(X, W, b, stride=1, padding=2):
     W_col = W.reshape(n_filters, -1)
     #print('X_col shape',X_col.shape)
     #print('W_col shape',W_col.shape)
-    print("Type of W_col:", type(W_col), "with dtype:", W_col.dtype)
-    print("Type of X_col:", type(X_col), "with dtype:", X_col.dtype)
-    print("Type of b:", type(b), "with dtype:", b.dtype)
-    print("Shape of W_col:", W_col.shape)
-    print("Shape of X_col:", X_col.shape)
-    print("Shape of b:", b.shape)
     out = np.dot(W_col.get(), X_col.get()) + b.get()
     print("Type of out:", type(out), "with dtype:", out.dtype)
     #print('out shape',out.shape)
