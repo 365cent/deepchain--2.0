@@ -1,5 +1,4 @@
 import cupy as np
-import numpy
 import hipsternet.utils as util
 import hipsternet.constant as c
 import hipsternet.regularization as reg
@@ -24,7 +23,8 @@ def fc_backward(dout, cache):
 
 
 def relu_forward(X):
-    out = numpy.maximum(X, 0)
+    print('Type of X:', type(X), 'with dtype:', X.dtype)
+    out = np.maximum(X, 0)
     cache = X
     return out, cache
 
