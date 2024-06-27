@@ -1,4 +1,5 @@
 import cupy as np
+import numpy
 import hipsternet.utils as util
 import hipsternet.constant as c
 import hipsternet.regularization as reg
@@ -239,7 +240,7 @@ def conv_backward(dout, cache):
 
 def maxpool_forward(X, size=2, stride=2):
     def maxpool(X_col):
-        max_idx = np.argmax(X_col, axis=0)
+        max_idx = numpy.argmax(X_col, axis=0)
         print('Type of max_idx:', type(max_idx), 'with dtype:', max_idx.dtype)
         print('max_idx shape:', max_idx.shape)
         out = X_col[max_idx, range(max_idx.size)]
