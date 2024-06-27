@@ -204,6 +204,8 @@ def conv_forward(X, W, b, stride=1, padding=2):
     #print('X_col shape',X_col.shape)
     #print('W_col shape',W_col.shape)
     out = np.dot(W_col.get(), X_col.get()) + b.get()
+    # convert to cupy array
+    out = np.array(out)
     print("Type of out:", type(out), "with dtype:", out.dtype)
     #print('out shape',out.shape)
     out = out.reshape(n_filters, h_out, w_out, n_x)

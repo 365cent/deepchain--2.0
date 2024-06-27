@@ -5,7 +5,7 @@ import hipsternet.loss as loss_fun
 import hipsternet.layer as l
 import hipsternet.regularization as reg
 import hipsternet.utils as util
-#from cupy.core.multiarray import ndarray
+#from numpy.core.multiarray import ndarray
 
 
 class NeuralNet(object):
