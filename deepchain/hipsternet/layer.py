@@ -23,7 +23,7 @@ def fc_backward(dout, cache):
 
 
 def relu_forward(X):
-    out = np.max(X, 0)
+    out = np.maximum(X, 0.0)
     cache = X
     return out, cache
 
