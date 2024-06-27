@@ -240,7 +240,9 @@ def conv_backward(dout, cache):
 
 def maxpool_forward(X, size=2, stride=2):
     def maxpool(X_col):
-        max_idx = numpy.argmax(X_col, axis=0)
+        max_idx = np.argmax(X_col, axis=0)
+        #convert max_idx to numpy array
+        max_idx = np.array(max_idx)
         print('Type of max_idx:', type(max_idx), 'with dtype:', max_idx.dtype)
         print('max_idx shape:', max_idx.shape)
         out = X_col[max_idx, range(max_idx.size)]
